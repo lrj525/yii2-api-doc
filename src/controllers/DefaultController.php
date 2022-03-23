@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\lrj525\yii2apidoc\controllers;
+namespace badcat\yii2\apidoc\controllers;
 
 use yii\web\Controller;
 

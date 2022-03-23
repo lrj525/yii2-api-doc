@@ -1,5 +1,5 @@
 {
-    "name": "lrj525/yii2-api-doc",
+    "name": "badcat/yii2-api-doc",
     "description": "api doc for yii2",
     "type": "yii2-extension",
     "keywords": [
@@ -15,12 +15,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "lrj525\\Yii2ApiDoc\\": "src/"
+            "badcat\\yii2\\apidoc\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "lrj525",
+            "name": "badcat",
             "email": "lrj525@sina.com"
         }
     ],
