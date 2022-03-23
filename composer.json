@@ -1,0 +1,27 @@
+{
+    "name": "lrj525/yii2-api-doc",
+    "description": "api doc for yii2",
+    "type": "yii2-extension",
+    "keywords": [
+        "yii",
+        "extension",
+        "module",
+        "api",
+        "doc"
+      ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "lrj525\\Yii2ApiDoc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lrj525",
+            "email": "lrj525@sina.com"
+        }
+    ]
+}
