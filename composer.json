@@ -23,5 +23,6 @@
             "name": "lrj525",
             "email": "lrj525@sina.com"
         }
-    ]
+    ],
+    "minimum-stability": "dev"
 }
