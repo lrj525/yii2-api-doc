@@ -1,0 +1,30 @@
+a:link, a:hover, a:visited { text-decoration: none; }
+.docview { background: #fafafa; padding-top: 30px; }
+
+.docview .container{width:1366px;}
+
+
+.docview .left-block { background: #fff; box-shadow:0 1px 6px #ccc;width:25%; }
+.docview .menu{}
+.docview .menu dt{font-weight:bold; }
+.docview .menu dd { padding:8px 15px;}
+.docview .menu dd:hover{background-color:#f5f5f5;}
+.docview .menu dt, .docview .menu dd { word-wrap: break-word; word-break: normal; }
+
+
+.docview .right-block { background: #fff; box-shadow: 0 1px 6px #ccc; padding: 15px; min-height: 500px; width:75%;}
+
+
+
+.docview .viewtitle {font-size:18px;font-weight:bold;padding-bottom:15px;border-bottom:1px solid #ccc;text-align:center; }
+#mdcontent h5 { font-weight: bold; font-size:1em;line-height:1.4;margin-top:1em;margin-bottom:16px; }
+#mdcontent ul { padding:0px;padding-left: 2em; margin-top: 0; margin-bottom: 16px; }
+
+#mdcontent code { background: #f6f6f6; padding: 5px 8px; border-radius: 3px; font-size: 14px; color: #718c00; border: 1px solid #ddd;   }
+
+#mdcontent table { border-collapse: collapse; border-spacing: 0; display: block; width: 100%; overflow: auto; word-break: normal; word-break: keep-all; }
+#mdcontent table tr { background-color: rgb(64, 158, 255); color: rgb(255, 255, 255); }
+#mdcontent table tbody tr{background-color:#fff;}
+#mdcontent table th { text-align: left; width: 178px; padding: 6px 13px; border: 1px solid #ddd; font-weight: 700; }
+#mdcontent table td { text-align: left; padding: 6px 13px; border: 1px solid #ddd; color:#333;}
+#mdcontent .language-json{border:none;}

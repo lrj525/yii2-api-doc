@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+       <link rel="stylesheet" href="index.css" />
+      <script src="jquery.min.js"></script>
+    <script src="marked.min.js"></script>
+    <script>
+        $(function () {
+            $("dd").click(function () {
+                mdParse($(this).attr("mdpath"));
+            });
+            function mdParse(mdpath) {
+                $.ajax({
+                    url: mdpath, success: function (res) {
+                        document.getElementById('mdcontent').innerHTML = marked.parse(res);
+                        $(".language-json").each(function () {
+                            var jsontxt = $(this).text();
+                            var jsonFormat = JSON.stringify(JSON.parse(jsontxt),null,2);
+                            $(this).html(jsonFormat);
+                        });
+                    }
+                })
+            }
+            mdParse('admin.md');
+        });
+    </script>
+</head>
+<body class="docview">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 left-block">
+                <h4>${{modulename}}</h4>                
+                ${{moduleapilist}}
+            </div>
+            <div class="col-xs-8 ">
+                <div class="right-block">
+                    <h2 class="viewtitle">添加管理员</h2>
+                   <div id="mdcontent">
+
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

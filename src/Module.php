@@ -14,9 +14,12 @@ class Module extends \yii\base\Module implements BootstrapInterface
      */
     public $controllerNamespace = 'badcat\yii2\apidoc\controllers';
 
-    
+    public $docpath;
+    public $modules;
+
     public function bootstrap($app)
     {
+        $docpath=$this->docpath;
         if ($app instanceof \yii\web\Application) {
             $app->getUrlManager()->addRules([
                 ['class' => 'yii\web\UrlRule', 'pattern' => $this->id, 'route' => $this->id . '/default/index'],
