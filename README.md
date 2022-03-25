@@ -107,4 +107,14 @@ class AdminController extends BaseAuthController
 
 把项目使用自己擅长的方式部署后，访问：http://{您的域名}/yii2apidoc/ 打开
 
+
 ## 4. 查看结果
+访问：http://{您的域名}/{Module名称}/index.html
+
+## 5. 最终效果
+
+![图1](https://raw.githubusercontent.com/lrj525/yii2-api-doc/main/yii2apidoc-1.png)
+
+![图2](https://raw.githubusercontent.com/lrj525/yii2-api-doc/main/yii2apidoc-2.png)
+
+![图3](https://raw.githubusercontent.com/lrj525/yii2-api-doc/main/yii2apidoc-3.png)
